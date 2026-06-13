@@ -1,0 +1,15 @@
+# Artefacts générés par les notebooks (trop volumineux)
+data/
+models/
+exports/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
