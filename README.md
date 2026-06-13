@@ -11,7 +11,6 @@ Projet Deep Learning : classification automatique des intentions dans les messag
 
 ```
 notebooks/          9 notebooks d'expérimentation (ordre d'exécution 01→09)
-Documentation/      Documentation technique par étape
 models/             Modèles entraînés sauvegardés (.pt) — générés en exécutant les notebooks
 data/               Données prétraitées (client_data.pkl, vocab.pkl, ...) — générées en exécutant les notebooks
 exports/            Modèles exportés (TorchScript, ONNX, quantizé) — générés par 09_inference_deploiement.ipynb
@@ -95,14 +94,3 @@ Documentation interactive : [http://localhost:8000/docs](http://localhost:8000/d
 | **BiLSTM optimisé** | **98.08%** | ~6M | ~2 ms |
 
 **Modèle retenu pour le déploiement** : BiLSTM optimisé — 15× plus léger que DistilBERT (~16 Mo vs 268 Mo), sans dépendance HuggingFace en production.
-
----
-
-## Documentation technique
-
-| Fichier | Contenu |
-|---|---|
-| `Documentation/01_clustering.md` | Exploration KMeans, labellisation, split |
-| `Documentation/02_architectures.md` | Description des 6 architectures |
-| `Documentation/03_optimisation.md` | Optimisation BiLSTM — schedulers, grid search, résultats |
-| `Documentation/04_deploiement.md` | Export, quantization, API FastAPI, exemples réels |
